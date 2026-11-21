@@ -65,14 +65,19 @@
 - Fixed: SQLAlchemy 2.1 default-driver change (`api/db.py`); `ingestion/test_delhi.py` no longer downloads on import; CI no longer ignores test failures.
 
 ## Person A — Doing / to run on the local machine
-- [ ] Remove the duplicate `POSTGRES_PASSWORD` line in `.env`, then `python -m db.migrate --check` and `python -m db.migrate`.
-- [ ] `python -m ingestion.scheduler --once --offline`, then the DB integration tests.
-- [ ] Download Oct/Nov 2026 AAI summaries and refresh autorouter (including VISR), then re-run `evaluation.relevance_recall`.
-- [ ] `evaluation.retrieval_db_check`: record the SQL timings (target < 500 ms).
-- [ ] 48 h unattended scheduler run.
-- [ ] Hand-label `data/labelled/aai_label_sheet.csv` (300 rows), then re-run `classification.evaluate`.
+*Status checked 22 Nov 2026 on the local machine (PostgreSQL 14.24 + PostGIS 3.6.1, port 5433).*
+
+- [x] `.env` fixed; `python -m db.migrate --check` shows migrations 001–004 applied, 12/12 tables.
+- [x] `python -m ingestion.scheduler --once --offline` (1,245 NOTAM events in the DB); DB integration tests 6/6 pass; unit tests 194 passed, 1 skipped.
+- [ ] Download Oct/Nov 2026 AAI summaries and refresh autorouter (including VISR), then re-run `evaluation.relevance_recall`. Saved AAI data currently ends in July (Chennai: October), so end-to-end recall is 11.2% while algorithmic recall is 100%.
+- [x] `evaluation.retrieval_db_check`: SQL timings recorded, median 15–39 ms, max 95.5 ms (target < 500 ms).
+- [ ] 48 h unattended scheduler run (only two runs so far, both on 18 Nov).
+- [x] Hand-label `data/labelled/aai_label_sheet.csv` (300/300 rows), audit and `classification.evaluate` re-run, model retrained. Single annotator; the audit's 429 review flags (including 17 BLOCKING labels) are still to be confirmed.
 - [ ] pgAdmin screenshots S1–S21 (`docs/person_a/pgadmin_screenshots.md`).
 
 ## Blocked
 - FAA and ICAO live feeds: API keys not issued (`.env` empty).
-- Integration with Person B: `routing/` and `static_data/` are still stubs in this repository snapshot (all git branches point at the scaffold commit). The contract (`docs/contract.md`) and seed mode let B integrate as soon as the code exists.
+
+## Integration with Person B
+- `routing/`, `static_data/` and `POST /plan` are implemented and tested (routing evaluation 12/12; see `docs/routing_methodology.md`).
+- Open on B's side: web UI (`web/` is still a stub) and curated ATS airway data (the planner falls back to a synthetic lattice).
