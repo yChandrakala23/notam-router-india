@@ -1,0 +1,106 @@
+{
+  "etd_utc": "2026-11-21T18:32:00+00:00",
+  "corridor_nm": 200.0,
+  "fl_hi": 350,
+  "geometry": {
+    "with_geom": 726.0,
+    "valid": 726.0,
+    "srid_4326": 726.0,
+    "polygons": 726.0,
+    "min_area_ratio": 0.9922669708696887,
+    "max_area_ratio": 0.9943787061024985
+  },
+  "corridors": [
+    {
+      "corridor": "DEL-BOM",
+      "sql_features": 46,
+      "reference_features": 46,
+      "agreement": 1.0,
+      "edge_cases_spheroid_vs_sphere": [],
+      "unexplained_differences": [],
+      "only_sql": [],
+      "only_reference": [],
+      "median_ms": 15.4,
+      "max_ms": 15.5,
+      "counts_by_severity": {
+        "BLOCKING": 0,
+        "RESTRICTIVE": 2,
+        "ADVISORY": 44
+      }
+    },
+    {
+      "corridor": "DEL-BLR",
+      "sql_features": 104,
+      "reference_features": 104,
+      "agreement": 1.0,
+      "edge_cases_spheroid_vs_sphere": [],
+      "unexplained_differences": [],
+      "only_sql": [],
+      "only_reference": [],
+      "median_ms": 19.1,
+      "max_ms": 21.8,
+      "counts_by_severity": {
+        "BLOCKING": 0,
+        "RESTRICTIVE": 29,
+        "ADVISORY": 75
+      }
+    },
+    {
+      "corridor": "BOM-MAA",
+      "sql_features": 91,
+      "reference_features": 89,
+      "agreement": 0.978,
+      "edge_cases_spheroid_vs_sphere": [
+        331,
+        494
+      ],
+      "unexplained_differences": [],
+      "only_sql": [
+        331,
+        494
+      ],
+      "only_reference": [],
+      "median_ms": 29.0,
+      "max_ms": 35.1,
+      "counts_by_severity": {
+        "BLOCKING": 0,
+        "RESTRICTIVE": 27,
+        "ADVISORY": 64
+      }
+    },
+    {
+      "corridor": "CCU-DEL",
+      "sql_features": 45,
+      "reference_features": 45,
+      "agreement": 1.0,
+      "edge_cases_spheroid_vs_sphere": [],
+      "unexplained_differences": [],
+      "only_sql": [],
+      "only_reference": [],
+      "median_ms": 23.6,
+      "max_ms": 24.8,
+      "counts_by_severity": {
+        "BLOCKING": 0,
+        "RESTRICTIVE": 9,
+        "ADVISORY": 36
+      }
+    },
+    {
+      "corridor": "DEL-SXR",
+      "sql_features": 23,
+      "reference_features": 23,
+      "agreement": 1.0,
+      "edge_cases_spheroid_vs_sphere": [],
+      "unexplained_differences": [],
+      "only_sql": [],
+      "only_reference": [],
+      "median_ms": 23.2,
+      "max_ms": 23.9,
+      "counts_by_severity": {
+        "BLOCKING": 0,
+        "RESTRICTIVE": 1,
+        "ADVISORY": 22
+      }
+    }
+  ]
+}

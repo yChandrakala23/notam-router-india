@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-11-21T18:31:49+00:00",
+  "aai": {
+    "observations": 1647,
+    "unique_records": 1135,
+    "unique_identities": 1127,
+    "parsed_ok": 1134,
+    "parse_success_rate": 0.9991,
+    "failures": {
+      "invalid end of validity: minute must be in 0..59": 1
+    },
+    "location_assigned": 1065,
+    "location_assigned_rate": 0.9392,
+    "independent_check": {
+      "reference": "autorouter structured fields (same NOTAM identity)",
+      "matched_identities": 25,
+      "field_accuracy": {
+        "estimated_end": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        },
+        "location_A": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        },
+        "notam_id": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        },
+        "permanent": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        },
+        "valid_from_B": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        },
+        "valid_until_C": {
+          "correct": 25,
+          "total": 25,
+          "accuracy": 1.0
+        }
+      },
+      "mismatches": []
+    }
+  },
+  "autorouter": {
+    "records": 143,
+    "note": "rendered from structured JSON then parsed (round trip), see module docstring",
+    "field_accuracy": {
+      "action": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "centre_within_0.5_arcmin": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "fir": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "location_A": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "lower_fl": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "notam_id": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "parsed": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "purpose": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "q_code": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "radius_nm": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "scope": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "traffic": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "upper_fl": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "valid_from_B": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      },
+      "valid_until_C": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      }
+    },
+    "geometry": {
+      "valid_polygon": {
+        "correct": 143,
+        "total": 143,
+        "accuracy": 1.0
+      }
+    },
+    "mismatches": []
+  },
+  "fixtures": {
+    "records": 3,
+    "field_accuracy": {
+      "action": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "fir": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "locations": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "lower_fl": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "notam_id": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "q_code": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "schedule": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "upper_fl": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "valid_from": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "valid_until": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "summary": {
+    "aai_independent": {
+      "correct": 150,
+      "total": 150,
+      "accuracy": 1.0
+    },
+    "autorouter_round_trip": {
+      "correct": 2145,
+      "total": 2145,
+      "accuracy": 1.0
+    },
+    "fixtures": {
+      "correct": 30,
+      "total": 30,
+      "accuracy": 1.0
+    },
+    "real_records_tested": 1281
+  }
+}

@@ -12,3 +12,11 @@ classification/models/*
 !classification/models/.gitkeep
 *.log
 .DS_Store
+# Autorouter commercial NOTAM data — keep local, never commit
+data/autorouter/
+data/autorouter_*/
+logs/
+# derived from commercial autorouter text
+data/labelled/autorouter_*
+classification/models/*.joblib
+.pytest_cache/

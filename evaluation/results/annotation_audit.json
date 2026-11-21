@@ -1,0 +1,3460 @@
+{
+ "summary": {
+  "rows": 300,
+  "unique_identities": 300,
+  "usable_category": 300,
+  "usable_severity": 300,
+  "usable_both": 300,
+  "issues_by_level": {
+   "review": 429
+  },
+  "category_distribution": {
+   "AERODROME": 121,
+   "RUNWAY": 41,
+   "OBSTACLE": 23,
+   "NAVAID_COMMS": 22,
+   "NAV_WARNING": 73,
+   "PROCEDURE": 20
+  },
+  "severity_distribution": {
+   "RESTRICTIVE": 176,
+   "ADVISORY": 107,
+   "BLOCKING": 17
+  }
+ },
+ "issues": [
+  {
+   "row": 1,
+   "nof": "VABB",
+   "notam_id": "A0462/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 1,
+   "nof": "VABB",
+   "notam_id": "A0462/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 2,
+   "nof": "VECC",
+   "notam_id": "A0241/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 2,
+   "nof": "VECC",
+   "notam_id": "A0241/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 2,
+   "nof": "VECC",
+   "notam_id": "A0241/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 4,
+   "nof": "VOMM",
+   "notam_id": "A1730/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 4,
+   "nof": "VOMM",
+   "notam_id": "A1730/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted NAV_WARNING"
+  },
+  {
+   "row": 4,
+   "nof": "VOMM",
+   "notam_id": "A1730/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING for category NAVAID_COMMS; rules.py gives these at most RESTRICTIVE"
+  },
+  {
+   "row": 5,
+   "nof": "VABB",
+   "notam_id": "A0707/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 5,
+   "nof": "VABB",
+   "notam_id": "A0707/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 12,
+   "nof": "VOMM",
+   "notam_id": "A2740/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 12,
+   "nof": "VOMM",
+   "notam_id": "A2740/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 13,
+   "nof": "VABB",
+   "notam_id": "A0164/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 13,
+   "nof": "VABB",
+   "notam_id": "A0164/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 15,
+   "nof": "VIDP",
+   "notam_id": "A0567/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 15,
+   "nof": "VIDP",
+   "notam_id": "A0567/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted BLOCKING"
+  },
+  {
+   "row": 15,
+   "nof": "VIDP",
+   "notam_id": "A0567/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "RESTRICTIVE but the text says the aerodrome is closed; rules.py maps aerodrome closure (FA..LC) to BLOCKING"
+  },
+  {
+   "row": 16,
+   "nof": "VOMM",
+   "notam_id": "A1041/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 16,
+   "nof": "VOMM",
+   "notam_id": "A1041/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted RUNWAY"
+  },
+  {
+   "row": 16,
+   "nof": "VOMM",
+   "notam_id": "A1041/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 19,
+   "nof": "VIDP",
+   "notam_id": "A0112/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 19,
+   "nof": "VIDP",
+   "notam_id": "A0112/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated OBSTACLE, predicted AERODROME"
+  },
+  {
+   "row": 19,
+   "nof": "VIDP",
+   "notam_id": "A0112/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 20,
+   "nof": "VOMM",
+   "notam_id": "A0638/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 20,
+   "nof": "VOMM",
+   "notam_id": "A0638/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 22,
+   "nof": "VECC",
+   "notam_id": "A1045/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 22,
+   "nof": "VECC",
+   "notam_id": "A1045/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 23,
+   "nof": "VIDP",
+   "notam_id": "A1418/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 23,
+   "nof": "VIDP",
+   "notam_id": "A1418/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 23,
+   "nof": "VIDP",
+   "notam_id": "A1418/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 23,
+   "nof": "VIDP",
+   "notam_id": "A1418/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING for an Airspace Use Plan: it lists many TRA/TSA activations and conditional routes, each with its own times and FL band; whether a route is blocked depends on which area it crosses, so a single BLOCKING label over-generalises"
+  },
+  {
+   "row": 23,
+   "nof": "VIDP",
+   "notam_id": "A1418/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "no lateral limits in the E-text and AAI summaries carry no Q-line circle: routing can apply this only at aerodrome / FIR level"
+  },
+  {
+   "row": 25,
+   "nof": "VABB",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 25,
+   "nof": "VABB",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 25,
+   "nof": "VABB",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 26,
+   "nof": "VECC",
+   "notam_id": "A0989/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 26,
+   "nof": "VECC",
+   "notam_id": "A0989/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 27,
+   "nof": "VIDP",
+   "notam_id": "A1235/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 27,
+   "nof": "VIDP",
+   "notam_id": "A1235/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 28,
+   "nof": "VOMM",
+   "notam_id": "A2671/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 28,
+   "nof": "VOMM",
+   "notam_id": "A2671/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 32,
+   "nof": "VOMM",
+   "notam_id": "A0460/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 32,
+   "nof": "VOMM",
+   "notam_id": "A0460/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted NAVAID_COMMS"
+  },
+  {
+   "row": 34,
+   "nof": "VECC",
+   "notam_id": "A0558/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 34,
+   "nof": "VECC",
+   "notam_id": "A0558/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 34,
+   "nof": "VECC",
+   "notam_id": "A0558/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 35,
+   "nof": "VIDP",
+   "notam_id": "A1120/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 35,
+   "nof": "VIDP",
+   "notam_id": "A1120/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 35,
+   "nof": "VIDP",
+   "notam_id": "A1120/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 36,
+   "nof": "VOMM",
+   "notam_id": "A2969/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 36,
+   "nof": "VOMM",
+   "notam_id": "A2969/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 40,
+   "nof": "VOMM",
+   "notam_id": "A1176/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 40,
+   "nof": "VOMM",
+   "notam_id": "A1176/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 43,
+   "nof": "VIDP",
+   "notam_id": "A0933/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 43,
+   "nof": "VIDP",
+   "notam_id": "A0933/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 43,
+   "nof": "VIDP",
+   "notam_id": "A0933/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 45,
+   "nof": "VABB",
+   "notam_id": "A0804/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 45,
+   "nof": "VABB",
+   "notam_id": "A0804/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 46,
+   "nof": "VECC",
+   "notam_id": "A0415/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 46,
+   "nof": "VECC",
+   "notam_id": "A0415/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 46,
+   "nof": "VECC",
+   "notam_id": "A0415/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 49,
+   "nof": "VABB",
+   "notam_id": "A0471/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 49,
+   "nof": "VABB",
+   "notam_id": "A0471/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 49,
+   "nof": "VABB",
+   "notam_id": "A0471/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 52,
+   "nof": "VOMM",
+   "notam_id": "A2605/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 52,
+   "nof": "VOMM",
+   "notam_id": "A2605/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted NAV_WARNING"
+  },
+  {
+   "row": 52,
+   "nof": "VOMM",
+   "notam_id": "A2605/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated ADVISORY, predicted RESTRICTIVE"
+  },
+  {
+   "row": 53,
+   "nof": "VABB",
+   "notam_id": "A0632/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 53,
+   "nof": "VABB",
+   "notam_id": "A0632/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 54,
+   "nof": "VECC",
+   "notam_id": "A0798/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 54,
+   "nof": "VECC",
+   "notam_id": "A0798/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 54,
+   "nof": "VECC",
+   "notam_id": "A0798/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 55,
+   "nof": "VIDP",
+   "notam_id": "A0978/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 55,
+   "nof": "VIDP",
+   "notam_id": "A0978/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 58,
+   "nof": "VECC",
+   "notam_id": "A0811/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 58,
+   "nof": "VECC",
+   "notam_id": "A0811/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 59,
+   "nof": "VIDP",
+   "notam_id": "A0681/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 59,
+   "nof": "VIDP",
+   "notam_id": "A0681/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 61,
+   "nof": "VABB",
+   "notam_id": "A0175/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 61,
+   "nof": "VABB",
+   "notam_id": "A0175/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 63,
+   "nof": "VIDP",
+   "notam_id": "A1108/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 63,
+   "nof": "VIDP",
+   "notam_id": "A1108/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 64,
+   "nof": "VOMM",
+   "notam_id": "A1459/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 64,
+   "nof": "VOMM",
+   "notam_id": "A1459/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted PROCEDURE"
+  },
+  {
+   "row": 64,
+   "nof": "VOMM",
+   "notam_id": "A1459/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 64,
+   "nof": "VOMM",
+   "notam_id": "A1459/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING for an Airspace Use Plan: it lists many TRA/TSA activations and conditional routes, each with its own times and FL band; whether a route is blocked depends on which area it crosses, so a single BLOCKING label over-generalises"
+  },
+  {
+   "row": 64,
+   "nof": "VOMM",
+   "notam_id": "A1459/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "no lateral limits in the E-text and AAI summaries carry no Q-line circle: routing can apply this only at aerodrome / FIR level"
+  },
+  {
+   "row": 66,
+   "nof": "VECC",
+   "notam_id": "A0575/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 66,
+   "nof": "VECC",
+   "notam_id": "A0575/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 67,
+   "nof": "VIDP",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 67,
+   "nof": "VIDP",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 67,
+   "nof": "VIDP",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 74,
+   "nof": "VECC",
+   "notam_id": "A0803/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 74,
+   "nof": "VECC",
+   "notam_id": "A0803/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 78,
+   "nof": "VECC",
+   "notam_id": "A0747/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 78,
+   "nof": "VECC",
+   "notam_id": "A0747/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 78,
+   "nof": "VECC",
+   "notam_id": "A0747/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 81,
+   "nof": "VABB",
+   "notam_id": "A0791/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 81,
+   "nof": "VABB",
+   "notam_id": "A0791/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 82,
+   "nof": "VECC",
+   "notam_id": "A0808/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 82,
+   "nof": "VECC",
+   "notam_id": "A0808/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 84,
+   "nof": "VOMM",
+   "notam_id": "A1285/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 84,
+   "nof": "VOMM",
+   "notam_id": "A1285/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted NAV_WARNING"
+  },
+  {
+   "row": 84,
+   "nof": "VOMM",
+   "notam_id": "A1285/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated ADVISORY, predicted RESTRICTIVE"
+  },
+  {
+   "row": 86,
+   "nof": "VECC",
+   "notam_id": "A0607/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 86,
+   "nof": "VECC",
+   "notam_id": "A0607/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 87,
+   "nof": "VIDP",
+   "notam_id": "A0847/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 87,
+   "nof": "VIDP",
+   "notam_id": "A0847/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 89,
+   "nof": "VABB",
+   "notam_id": "A0671/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 89,
+   "nof": "VABB",
+   "notam_id": "A0671/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 89,
+   "nof": "VABB",
+   "notam_id": "A0671/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 90,
+   "nof": "VECC",
+   "notam_id": "A1020/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 90,
+   "nof": "VECC",
+   "notam_id": "A1020/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 91,
+   "nof": "VIDP",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 91,
+   "nof": "VIDP",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 91,
+   "nof": "VIDP",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 92,
+   "nof": "VOMM",
+   "notam_id": "A2888/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 92,
+   "nof": "VOMM",
+   "notam_id": "A2888/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 93,
+   "nof": "VABB",
+   "notam_id": "A0492/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 93,
+   "nof": "VABB",
+   "notam_id": "A0492/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted PROCEDURE"
+  },
+  {
+   "row": 94,
+   "nof": "VECC",
+   "notam_id": "A0823/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 94,
+   "nof": "VECC",
+   "notam_id": "A0823/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 95,
+   "nof": "VIDP",
+   "notam_id": "A0713/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 95,
+   "nof": "VIDP",
+   "notam_id": "A0713/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 95,
+   "nof": "VIDP",
+   "notam_id": "A0713/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 96,
+   "nof": "VOMM",
+   "notam_id": "A1142/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 96,
+   "nof": "VOMM",
+   "notam_id": "A1142/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 99,
+   "nof": "VIDP",
+   "notam_id": "A1162/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 99,
+   "nof": "VIDP",
+   "notam_id": "A1162/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 99,
+   "nof": "VIDP",
+   "notam_id": "A1162/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 100,
+   "nof": "VOMM",
+   "notam_id": "A1234/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 100,
+   "nof": "VOMM",
+   "notam_id": "A1234/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 100,
+   "nof": "VOMM",
+   "notam_id": "A1234/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 103,
+   "nof": "VIDP",
+   "notam_id": "A0371/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 103,
+   "nof": "VIDP",
+   "notam_id": "A0371/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 103,
+   "nof": "VIDP",
+   "notam_id": "A0371/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 104,
+   "nof": "VOMM",
+   "notam_id": "A0983/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 104,
+   "nof": "VOMM",
+   "notam_id": "A0983/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted AERODROME"
+  },
+  {
+   "row": 104,
+   "nof": "VOMM",
+   "notam_id": "A0983/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 105,
+   "nof": "VABB",
+   "notam_id": "A0219/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 105,
+   "nof": "VABB",
+   "notam_id": "A0219/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 106,
+   "nof": "VECC",
+   "notam_id": "A0612/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 106,
+   "nof": "VECC",
+   "notam_id": "A0612/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 107,
+   "nof": "VIDP",
+   "notam_id": "A0430/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 107,
+   "nof": "VIDP",
+   "notam_id": "A0430/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 108,
+   "nof": "VOMM",
+   "notam_id": "A0385/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 108,
+   "nof": "VOMM",
+   "notam_id": "A0385/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted RUNWAY"
+  },
+  {
+   "row": 108,
+   "nof": "VOMM",
+   "notam_id": "A0385/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated ADVISORY, predicted RESTRICTIVE"
+  },
+  {
+   "row": 109,
+   "nof": "VABB",
+   "notam_id": "A0524/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 109,
+   "nof": "VABB",
+   "notam_id": "A0524/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 109,
+   "nof": "VABB",
+   "notam_id": "A0524/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 110,
+   "nof": "VECC",
+   "notam_id": "A0583/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 110,
+   "nof": "VECC",
+   "notam_id": "A0583/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 111,
+   "nof": "VIDP",
+   "notam_id": "A0846/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 111,
+   "nof": "VIDP",
+   "notam_id": "A0846/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 113,
+   "nof": "VABB",
+   "notam_id": "A0815/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 113,
+   "nof": "VABB",
+   "notam_id": "A0815/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 113,
+   "nof": "VABB",
+   "notam_id": "A0815/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 118,
+   "nof": "VECC",
+   "notam_id": "A0966/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 118,
+   "nof": "VECC",
+   "notam_id": "A0966/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 118,
+   "nof": "VECC",
+   "notam_id": "A0966/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 119,
+   "nof": "VIDP",
+   "notam_id": "A1101/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 119,
+   "nof": "VIDP",
+   "notam_id": "A1101/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 119,
+   "nof": "VIDP",
+   "notam_id": "A1101/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 120,
+   "nof": "VOMM",
+   "notam_id": "A0389/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 120,
+   "nof": "VOMM",
+   "notam_id": "A0389/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 121,
+   "nof": "VABB",
+   "notam_id": "A0506/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 121,
+   "nof": "VABB",
+   "notam_id": "A0506/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 123,
+   "nof": "VIDP",
+   "notam_id": "A1233/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 123,
+   "nof": "VIDP",
+   "notam_id": "A1233/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 125,
+   "nof": "VABB",
+   "notam_id": "A0307/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 125,
+   "nof": "VABB",
+   "notam_id": "A0307/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 125,
+   "nof": "VABB",
+   "notam_id": "A0307/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 126,
+   "nof": "VECC",
+   "notam_id": "A0149/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 126,
+   "nof": "VECC",
+   "notam_id": "A0149/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted PROCEDURE"
+  },
+  {
+   "row": 127,
+   "nof": "VIDP",
+   "notam_id": "A1092/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 127,
+   "nof": "VIDP",
+   "notam_id": "A1092/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 128,
+   "nof": "VOMM",
+   "notam_id": "A1701/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 128,
+   "nof": "VOMM",
+   "notam_id": "A1701/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 128,
+   "nof": "VOMM",
+   "notam_id": "A1701/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 131,
+   "nof": "VIDP",
+   "notam_id": "A0043/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 131,
+   "nof": "VIDP",
+   "notam_id": "A0043/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted AERODROME"
+  },
+  {
+   "row": 133,
+   "nof": "VABB",
+   "notam_id": "A0558/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 133,
+   "nof": "VABB",
+   "notam_id": "A0558/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted PROCEDURE"
+  },
+  {
+   "row": 134,
+   "nof": "VECC",
+   "notam_id": "A1026/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 134,
+   "nof": "VECC",
+   "notam_id": "A1026/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 135,
+   "nof": "VIDP",
+   "notam_id": "A0900/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 135,
+   "nof": "VIDP",
+   "notam_id": "A0900/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 137,
+   "nof": "VABB",
+   "notam_id": "A0744/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 137,
+   "nof": "VABB",
+   "notam_id": "A0744/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 140,
+   "nof": "VOMM",
+   "notam_id": "A1187/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 140,
+   "nof": "VOMM",
+   "notam_id": "A1187/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 142,
+   "nof": "VECC",
+   "notam_id": "A0500/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 142,
+   "nof": "VECC",
+   "notam_id": "A0500/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted BLOCKING"
+  },
+  {
+   "row": 142,
+   "nof": "VECC",
+   "notam_id": "A0500/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "RESTRICTIVE but the text says the aerodrome is closed; rules.py maps aerodrome closure (FA..LC) to BLOCKING"
+  },
+  {
+   "row": 144,
+   "nof": "VOMM",
+   "notam_id": "A1184/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 144,
+   "nof": "VOMM",
+   "notam_id": "A1184/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 146,
+   "nof": "VECC",
+   "notam_id": "A0601/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 146,
+   "nof": "VECC",
+   "notam_id": "A0601/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 146,
+   "nof": "VECC",
+   "notam_id": "A0601/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 147,
+   "nof": "VIDP",
+   "notam_id": "A0740/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 147,
+   "nof": "VIDP",
+   "notam_id": "A0740/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 147,
+   "nof": "VIDP",
+   "notam_id": "A0740/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 148,
+   "nof": "VOMM",
+   "notam_id": "A2966/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 148,
+   "nof": "VOMM",
+   "notam_id": "A2966/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 150,
+   "nof": "VECC",
+   "notam_id": "A0484/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 150,
+   "nof": "VECC",
+   "notam_id": "A0484/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 150,
+   "nof": "VECC",
+   "notam_id": "A0484/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 151,
+   "nof": "VIDP",
+   "notam_id": "A1358/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 151,
+   "nof": "VIDP",
+   "notam_id": "A1358/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 151,
+   "nof": "VIDP",
+   "notam_id": "A1358/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 152,
+   "nof": "VOMM",
+   "notam_id": "A1689/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 152,
+   "nof": "VOMM",
+   "notam_id": "A1689/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 154,
+   "nof": "VECC",
+   "notam_id": "A0716/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 154,
+   "nof": "VECC",
+   "notam_id": "A0716/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 155,
+   "nof": "VIDP",
+   "notam_id": "A0014/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 155,
+   "nof": "VIDP",
+   "notam_id": "A0014/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 156,
+   "nof": "VOMM",
+   "notam_id": "A2500/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 156,
+   "nof": "VOMM",
+   "notam_id": "A2500/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted AERODROME"
+  },
+  {
+   "row": 157,
+   "nof": "VABB",
+   "notam_id": "A0177/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 157,
+   "nof": "VABB",
+   "notam_id": "A0177/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 162,
+   "nof": "VECC",
+   "notam_id": "A1030/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 162,
+   "nof": "VECC",
+   "notam_id": "A1030/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 162,
+   "nof": "VECC",
+   "notam_id": "A1030/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 166,
+   "nof": "VECC",
+   "notam_id": "A0733/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 166,
+   "nof": "VECC",
+   "notam_id": "A0733/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 167,
+   "nof": "VIDP",
+   "notam_id": "A1295/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 167,
+   "nof": "VIDP",
+   "notam_id": "A1295/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 168,
+   "nof": "VOMM",
+   "notam_id": "A0048/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 168,
+   "nof": "VOMM",
+   "notam_id": "A0048/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 170,
+   "nof": "VECC",
+   "notam_id": "A0337/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 170,
+   "nof": "VECC",
+   "notam_id": "A0337/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted PROCEDURE"
+  },
+  {
+   "row": 171,
+   "nof": "VIDP",
+   "notam_id": "A0505/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 171,
+   "nof": "VIDP",
+   "notam_id": "A0505/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 174,
+   "nof": "VECC",
+   "notam_id": "A1033/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY but the text describes firing/launch or a no-flight zone; rules.py treats active hazards of this kind as BLOCKING (WM/R*) or at least RESTRICTIVE"
+  },
+  {
+   "row": 174,
+   "nof": "VECC",
+   "notam_id": "A1033/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 176,
+   "nof": "VOMM",
+   "notam_id": "A2342/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 176,
+   "nof": "VOMM",
+   "notam_id": "A2342/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 177,
+   "nof": "VABB",
+   "notam_id": "A0599/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 177,
+   "nof": "VABB",
+   "notam_id": "A0599/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 179,
+   "nof": "VIDP",
+   "notam_id": "A0446/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 179,
+   "nof": "VIDP",
+   "notam_id": "A0446/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 180,
+   "nof": "VOMM",
+   "notam_id": "A1386/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 180,
+   "nof": "VOMM",
+   "notam_id": "A1386/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated ADVISORY, predicted RESTRICTIVE"
+  },
+  {
+   "row": 181,
+   "nof": "VABB",
+   "notam_id": "A0461/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 181,
+   "nof": "VABB",
+   "notam_id": "A0461/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 182,
+   "nof": "VECC",
+   "notam_id": "A0554/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 182,
+   "nof": "VECC",
+   "notam_id": "A0554/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 182,
+   "nof": "VECC",
+   "notam_id": "A0554/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 183,
+   "nof": "VIDP",
+   "notam_id": "A1068/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 183,
+   "nof": "VIDP",
+   "notam_id": "A1068/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 184,
+   "nof": "VOMM",
+   "notam_id": "A1651/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 184,
+   "nof": "VOMM",
+   "notam_id": "A1651/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 184,
+   "nof": "VOMM",
+   "notam_id": "A1651/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 187,
+   "nof": "VIDP",
+   "notam_id": "A0814/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 187,
+   "nof": "VIDP",
+   "notam_id": "A0814/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 188,
+   "nof": "VOMM",
+   "notam_id": "A1593/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 188,
+   "nof": "VOMM",
+   "notam_id": "A1593/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 189,
+   "nof": "VABB",
+   "notam_id": "A0178/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 189,
+   "nof": "VABB",
+   "notam_id": "A0178/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 190,
+   "nof": "VECC",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 190,
+   "nof": "VECC",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 190,
+   "nof": "VECC",
+   "notam_id": "A1019/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 191,
+   "nof": "VIDP",
+   "notam_id": "A1435/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 191,
+   "nof": "VIDP",
+   "notam_id": "A1435/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 191,
+   "nof": "VIDP",
+   "notam_id": "A1435/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 192,
+   "nof": "VOMM",
+   "notam_id": "A1469/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 192,
+   "nof": "VOMM",
+   "notam_id": "A1469/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated OBSTACLE, predicted RUNWAY"
+  },
+  {
+   "row": 194,
+   "nof": "VECC",
+   "notam_id": "A0443/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 194,
+   "nof": "VECC",
+   "notam_id": "A0443/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 195,
+   "nof": "VIDP",
+   "notam_id": "A1104/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 195,
+   "nof": "VIDP",
+   "notam_id": "A1104/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 195,
+   "nof": "VIDP",
+   "notam_id": "A1104/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 196,
+   "nof": "VOMM",
+   "notam_id": "A2451/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 196,
+   "nof": "VOMM",
+   "notam_id": "A2451/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted NAVAID_COMMS"
+  },
+  {
+   "row": 198,
+   "nof": "VECC",
+   "notam_id": "A0988/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 198,
+   "nof": "VECC",
+   "notam_id": "A0988/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 200,
+   "nof": "VOMM",
+   "notam_id": "A0578/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 200,
+   "nof": "VOMM",
+   "notam_id": "A0578/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 203,
+   "nof": "VIDP",
+   "notam_id": "A1190/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 203,
+   "nof": "VIDP",
+   "notam_id": "A1190/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 206,
+   "nof": "VECC",
+   "notam_id": "A0968/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 206,
+   "nof": "VECC",
+   "notam_id": "A0968/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 210,
+   "nof": "VECC",
+   "notam_id": "A1039/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 210,
+   "nof": "VECC",
+   "notam_id": "A1039/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 212,
+   "nof": "VOMM",
+   "notam_id": "A2923/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "no lateral limits in the E-text and AAI summaries carry no Q-line circle: routing can apply this only at aerodrome / FIR level"
+  },
+  {
+   "row": 214,
+   "nof": "VECC",
+   "notam_id": "A0621/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 214,
+   "nof": "VECC",
+   "notam_id": "A0621/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 214,
+   "nof": "VECC",
+   "notam_id": "A0621/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 216,
+   "nof": "VOMM",
+   "notam_id": "A1353/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 216,
+   "nof": "VOMM",
+   "notam_id": "A1353/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 216,
+   "nof": "VOMM",
+   "notam_id": "A1353/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 217,
+   "nof": "VABB",
+   "notam_id": "A0326/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 217,
+   "nof": "VABB",
+   "notam_id": "A0326/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 217,
+   "nof": "VABB",
+   "notam_id": "A0326/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 218,
+   "nof": "VECC",
+   "notam_id": "A0765/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 218,
+   "nof": "VECC",
+   "notam_id": "A0765/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 218,
+   "nof": "VECC",
+   "notam_id": "A0765/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 218,
+   "nof": "VECC",
+   "notam_id": "A0765/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING NAV_WARNING without firing/launch/no-flight/airspace-not-available wording; rules.py blocks only WM/WD/WW/WR-type hazards and active R* areas"
+  },
+  {
+   "row": 226,
+   "nof": "VECC",
+   "notam_id": "A0599/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 226,
+   "nof": "VECC",
+   "notam_id": "A0599/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 227,
+   "nof": "VIDP",
+   "notam_id": "A0463/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 227,
+   "nof": "VIDP",
+   "notam_id": "A0463/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 228,
+   "nof": "VOMM",
+   "notam_id": "A1054/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 228,
+   "nof": "VOMM",
+   "notam_id": "A1054/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 228,
+   "nof": "VOMM",
+   "notam_id": "A1054/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 229,
+   "nof": "VABB",
+   "notam_id": "A0518/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 229,
+   "nof": "VABB",
+   "notam_id": "A0518/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 234,
+   "nof": "VECC",
+   "notam_id": "A0360/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 234,
+   "nof": "VECC",
+   "notam_id": "A0360/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 236,
+   "nof": "VOMM",
+   "notam_id": "A2387/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 236,
+   "nof": "VOMM",
+   "notam_id": "A2387/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted PROCEDURE"
+  },
+  {
+   "row": 238,
+   "nof": "VECC",
+   "notam_id": "A0490/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 238,
+   "nof": "VECC",
+   "notam_id": "A0490/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 239,
+   "nof": "VIDP",
+   "notam_id": "A1607/21",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 239,
+   "nof": "VIDP",
+   "notam_id": "A1607/21",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted RUNWAY"
+  },
+  {
+   "row": 239,
+   "nof": "VIDP",
+   "notam_id": "A1607/21",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 241,
+   "nof": "VABB",
+   "notam_id": "A0654/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 241,
+   "nof": "VABB",
+   "notam_id": "A0654/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 242,
+   "nof": "VECC",
+   "notam_id": "A0967/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 242,
+   "nof": "VECC",
+   "notam_id": "A0967/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 242,
+   "nof": "VECC",
+   "notam_id": "A0967/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 243,
+   "nof": "VIDP",
+   "notam_id": "A0595/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 243,
+   "nof": "VIDP",
+   "notam_id": "A0595/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 243,
+   "nof": "VIDP",
+   "notam_id": "A0595/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 244,
+   "nof": "VOMM",
+   "notam_id": "A2948/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 244,
+   "nof": "VOMM",
+   "notam_id": "A2948/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAVAID_COMMS, predicted AERODROME"
+  },
+  {
+   "row": 246,
+   "nof": "VECC",
+   "notam_id": "A0423/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 246,
+   "nof": "VECC",
+   "notam_id": "A0423/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted PROCEDURE"
+  },
+  {
+   "row": 247,
+   "nof": "VIDP",
+   "notam_id": "A0964/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 247,
+   "nof": "VIDP",
+   "notam_id": "A0964/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 249,
+   "nof": "VABB",
+   "notam_id": "A0787/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 249,
+   "nof": "VABB",
+   "notam_id": "A0787/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 249,
+   "nof": "VABB",
+   "notam_id": "A0787/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 250,
+   "nof": "VECC",
+   "notam_id": "A0732/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 250,
+   "nof": "VECC",
+   "notam_id": "A0732/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 251,
+   "nof": "VIDP",
+   "notam_id": "A0718/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 251,
+   "nof": "VIDP",
+   "notam_id": "A0718/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 251,
+   "nof": "VIDP",
+   "notam_id": "A0718/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 253,
+   "nof": "VABB",
+   "notam_id": "A0761/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 253,
+   "nof": "VABB",
+   "notam_id": "A0761/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 254,
+   "nof": "VECC",
+   "notam_id": "A0036/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 254,
+   "nof": "VECC",
+   "notam_id": "A0036/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 254,
+   "nof": "VECC",
+   "notam_id": "A0036/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 255,
+   "nof": "VIDP",
+   "notam_id": "A1015/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 255,
+   "nof": "VIDP",
+   "notam_id": "A1015/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 257,
+   "nof": "VABB",
+   "notam_id": "A0679/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 257,
+   "nof": "VABB",
+   "notam_id": "A0679/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 257,
+   "nof": "VABB",
+   "notam_id": "A0679/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 259,
+   "nof": "VIDP",
+   "notam_id": "A0738/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 259,
+   "nof": "VIDP",
+   "notam_id": "A0738/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 259,
+   "nof": "VIDP",
+   "notam_id": "A0738/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 259,
+   "nof": "VIDP",
+   "notam_id": "A0738/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING for an Airspace Use Plan: it lists many TRA/TSA activations and conditional routes, each with its own times and FL band; whether a route is blocked depends on which area it crosses, so a single BLOCKING label over-generalises"
+  },
+  {
+   "row": 259,
+   "nof": "VIDP",
+   "notam_id": "A0738/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "no lateral limits in the E-text and AAI summaries carry no Q-line circle: routing can apply this only at aerodrome / FIR level"
+  },
+  {
+   "row": 260,
+   "nof": "VOMM",
+   "notam_id": "A2850/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 260,
+   "nof": "VOMM",
+   "notam_id": "A2850/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 261,
+   "nof": "VABB",
+   "notam_id": "A0303/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "ADVISORY for an activated designated danger/prohibited/restricted area (V?D/V?P/V?R); rules.py maps active R* areas to BLOCKING"
+  },
+  {
+   "row": 261,
+   "nof": "VABB",
+   "notam_id": "A0303/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "category AERODROME for an airspace activity (firing / danger area / no-overfly); by Q-code subject this is NAV_WARNING (W*) or AIRSPACE_RESTRICTION (R*)"
+  },
+  {
+   "row": 262,
+   "nof": "VECC",
+   "notam_id": "A0317/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 262,
+   "nof": "VECC",
+   "notam_id": "A0317/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 262,
+   "nof": "VECC",
+   "notam_id": "A0317/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 263,
+   "nof": "VIDP",
+   "notam_id": "A1105/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 263,
+   "nof": "VIDP",
+   "notam_id": "A1105/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 263,
+   "nof": "VIDP",
+   "notam_id": "A1105/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 264,
+   "nof": "VOMM",
+   "notam_id": "A1381/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 264,
+   "nof": "VOMM",
+   "notam_id": "A1381/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 266,
+   "nof": "VECC",
+   "notam_id": "A1014/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 266,
+   "nof": "VECC",
+   "notam_id": "A1014/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 266,
+   "nof": "VECC",
+   "notam_id": "A1014/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 267,
+   "nof": "VIDP",
+   "notam_id": "A0566/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 267,
+   "nof": "VIDP",
+   "notam_id": "A0566/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted BLOCKING"
+  },
+  {
+   "row": 267,
+   "nof": "VIDP",
+   "notam_id": "A0566/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "RESTRICTIVE but the text says the aerodrome is closed; rules.py maps aerodrome closure (FA..LC) to BLOCKING"
+  },
+  {
+   "row": 270,
+   "nof": "VECC",
+   "notam_id": "A0881/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 270,
+   "nof": "VECC",
+   "notam_id": "A0881/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 270,
+   "nof": "VECC",
+   "notam_id": "A0881/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 271,
+   "nof": "VIDP",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 271,
+   "nof": "VIDP",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 271,
+   "nof": "VIDP",
+   "notam_id": "A0714/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 272,
+   "nof": "VOMM",
+   "notam_id": "A2617/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 272,
+   "nof": "VOMM",
+   "notam_id": "A2617/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 272,
+   "nof": "VOMM",
+   "notam_id": "A2617/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 272,
+   "nof": "VOMM",
+   "notam_id": "A2617/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "no lateral limits in the E-text and AAI summaries carry no Q-line circle: routing can apply this only at aerodrome / FIR level"
+  },
+  {
+   "row": 273,
+   "nof": "VABB",
+   "notam_id": "A0028/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 273,
+   "nof": "VABB",
+   "notam_id": "A0028/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 274,
+   "nof": "VECC",
+   "notam_id": "A0731/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 274,
+   "nof": "VECC",
+   "notam_id": "A0731/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 275,
+   "nof": "VIDP",
+   "notam_id": "A1424/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 275,
+   "nof": "VIDP",
+   "notam_id": "A1424/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted AERODROME"
+  },
+  {
+   "row": 276,
+   "nof": "VOMM",
+   "notam_id": "A0629/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 276,
+   "nof": "VOMM",
+   "notam_id": "A0629/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 278,
+   "nof": "VECC",
+   "notam_id": "A1027/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 278,
+   "nof": "VECC",
+   "notam_id": "A1027/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted PROCEDURE"
+  },
+  {
+   "row": 279,
+   "nof": "VIDP",
+   "notam_id": "A0958/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 279,
+   "nof": "VIDP",
+   "notam_id": "A0958/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 280,
+   "nof": "VOMM",
+   "notam_id": "A2644/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 280,
+   "nof": "VOMM",
+   "notam_id": "A2644/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 281,
+   "nof": "VABB",
+   "notam_id": "A0557/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 281,
+   "nof": "VABB",
+   "notam_id": "A0557/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated RUNWAY, predicted PROCEDURE"
+  },
+  {
+   "row": 284,
+   "nof": "VOMM",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 284,
+   "nof": "VOMM",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 284,
+   "nof": "VOMM",
+   "notam_id": "A1320/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 285,
+   "nof": "VABB",
+   "notam_id": "A0793/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 285,
+   "nof": "VABB",
+   "notam_id": "A0793/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 285,
+   "nof": "VABB",
+   "notam_id": "A0793/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 287,
+   "nof": "VIDP",
+   "notam_id": "A1165/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 287,
+   "nof": "VIDP",
+   "notam_id": "A1165/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 288,
+   "nof": "VOMM",
+   "notam_id": "A2843/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review operational impact; facility/service unavailability may affect route or airport operations differently.'); record the reason for the decision"
+  },
+  {
+   "row": 288,
+   "nof": "VOMM",
+   "notam_id": "A2843/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated AERODROME, predicted RUNWAY"
+  },
+  {
+   "row": 288,
+   "nof": "VOMM",
+   "notam_id": "A2843/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 291,
+   "nof": "VIDP",
+   "notam_id": "A0965/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 291,
+   "nof": "VIDP",
+   "notam_id": "A0965/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 291,
+   "nof": "VIDP",
+   "notam_id": "A0965/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 292,
+   "nof": "VOMM",
+   "notam_id": "A1666/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 292,
+   "nof": "VOMM",
+   "notam_id": "A1666/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 292,
+   "nof": "VOMM",
+   "notam_id": "A1666/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 294,
+   "nof": "VECC",
+   "notam_id": "A1003/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 294,
+   "nof": "VECC",
+   "notam_id": "A1003/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 294,
+   "nof": "VECC",
+   "notam_id": "A1003/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 294,
+   "nof": "VECC",
+   "notam_id": "A1003/26",
+   "level": "review",
+   "field": "severity_semantics",
+   "message": "BLOCKING NAV_WARNING without firing/launch/no-flight/airspace-not-available wording; rules.py blocks only WM/WD/WW/WR-type hazards and active R* areas"
+  },
+  {
+   "row": 297,
+   "nof": "VABB",
+   "notam_id": "A0044/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 297,
+   "nof": "VABB",
+   "notam_id": "A0044/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated PROCEDURE, predicted AERODROME"
+  },
+  {
+   "row": 298,
+   "nof": "VECC",
+   "notam_id": "A0835/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review whether this activity is a hazard warning or controlled airspace restriction.'); record the reason for the decision"
+  },
+  {
+   "row": 298,
+   "nof": "VECC",
+   "notam_id": "A0835/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 298,
+   "nof": "VECC",
+   "notam_id": "A0835/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  },
+  {
+   "row": 299,
+   "nof": "VIDP",
+   "notam_id": "A1100/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative ('Review severity against operational airspace/Q-code context; text indicates active airspace/range activity.'); record the reason for the decision"
+  },
+  {
+   "row": 299,
+   "nof": "VIDP",
+   "notam_id": "A1100/26",
+   "level": "review",
+   "field": "category",
+   "message": "annotated NAV_WARNING, predicted AERODROME"
+  },
+  {
+   "row": 299,
+   "nof": "VIDP",
+   "notam_id": "A1100/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated BLOCKING, predicted ADVISORY"
+  },
+  {
+   "row": 300,
+   "nof": "VOMM",
+   "notam_id": "A2385/26",
+   "level": "review",
+   "field": "notes",
+   "message": "label differs from prediction but the note is generic/uninformative (''); record the reason for the decision"
+  },
+  {
+   "row": 300,
+   "nof": "VOMM",
+   "notam_id": "A2385/26",
+   "level": "review",
+   "field": "severity",
+   "message": "annotated RESTRICTIVE, predicted ADVISORY"
+  }
+ ],
+ "unannotated_rows": 0
+}

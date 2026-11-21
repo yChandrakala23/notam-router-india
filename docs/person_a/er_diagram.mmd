@@ -1,0 +1,135 @@
+erDiagram
+    data_source ||--o{ ingestion_run : "logs runs of"
+    ingestion_run ||--o{ raw_notam : "fetched"
+    raw_notam ||--o{ notam_event : "best observation of"
+    notam_event |o--o{ notam_event : "replaces (NOTAMR/C)"
+    fir ||--o{ notam_event : "contains"
+    fir ||--o{ airport : "contains"
+    airport ||--o{ route_request : "origin / destination"
+    route_request ||--o{ candidate_route : "generates"
+    candidate_route ||--o{ route_conflict : "has"
+    notam_event ||--o{ route_conflict : "causes"
+    airway ||--o{ airway_edge : "consists of"
+    waypoint ||--o{ airway_edge : "from / to"
+
+    data_source {
+        serial source_id PK
+        text name UK "NOT NULL"
+        text access_type "api|pdf|file|manual"
+        boolean active
+        text base_url
+        int poll_interval_min
+        timestamptz created_at
+    }
+    ingestion_run {
+        bigserial run_id PK
+        int source_id FK "NOT NULL"
+        timestamptz started_at "NOT NULL"
+        timestamptz finished_at
+        text status "RUNNING|SUCCESS|PARTIAL|FAILED|SKIPPED"
+        int records_fetched
+        int records_inserted
+        int records_duplicate
+        int records_failed
+        text error_message "credentials redacted"
+        text trigger
+    }
+    raw_notam {
+        bigserial raw_id PK
+        bigint run_id FK "NOT NULL"
+        text notam_id
+        text nof "issuing NOTAM office"
+        text raw_text "NOT NULL, unchanged"
+        text raw_format "icao_text|aai_summary|autorouter_json"
+        text source_url
+        text location_hint
+        timestamptz fetched_at "NOT NULL"
+        text content_hash UK "SHA-256"
+        text parse_status "PENDING|PARSED|FAILED|SKIPPED"
+        text parse_error
+        timestamptz parsed_at
+    }
+    notam_event {
+        bigserial event_id PK
+        bigint raw_id FK "NOT NULL"
+        text nof UK "with notam_id"
+        text notam_id UK "A1234/26"
+        char action "N|R|C"
+        bigint replaces_event_id FK
+        text replaces_notam_id
+        text lifecycle_status "ACTIVE|REPLACED|CANCELLED"
+        text fir_code FK
+        text icao_location
+        text q_code
+        int lower_fl
+        int upper_fl
+        int4range fl_range "generated"
+        tstzrange valid_during "NOT NULL, UTC"
+        geometry center "Point 4326"
+        geometry geom "Polygon 4326"
+        numeric radius_nm
+        text geom_source "QLINE_CIRCLE|AERODROME_DEFAULT|FIR_WIDE|NONE"
+        text category
+        text severity "BLOCKING|RESTRICTIVE|ADVISORY"
+        real classifier_conf
+        text classifier_method
+        text e_text
+        smallint source_rank
+    }
+    fir {
+        text icao_code PK
+        text name
+        geometry boundary "MultiPolygon 4326"
+    }
+    airport {
+        text icao_code PK
+        text iata_code
+        text name
+        text city
+        text fir_code FK
+        geometry location "Point 4326"
+    }
+    waypoint {
+        serial waypoint_id PK
+        text ident
+        geometry location "Point 4326"
+    }
+    airway {
+        serial airway_id PK
+        text designator
+    }
+    airway_edge {
+        serial edge_id PK
+        int airway_id FK
+        int from_waypoint_id FK
+        int to_waypoint_id FK
+        real dist_nm
+        int lower_fl
+        int upper_fl
+        geometry geom "LineString 4326"
+    }
+    route_request {
+        bigserial request_id PK
+        text origin_icao FK
+        text dest_icao FK
+        timestamptz etd_utc
+        int cruise_fl
+        int cruise_tas_kt
+    }
+    candidate_route {
+        bigserial route_id PK
+        bigint request_id FK
+        real total_dist_nm
+        real est_time_min
+        boolean is_feasible
+        boolean is_selected
+        text reject_reason
+        geometry path "LineString 4326"
+    }
+    route_conflict {
+        bigserial conflict_id PK
+        bigint route_id FK
+        bigint event_id FK
+        text conflict_type "HARD|WARNING"
+        text explanation
+    }

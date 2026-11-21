@@ -1,0 +1,2481 @@
+{
+  "generated_at": "2026-11-21T18:28:45+00:00",
+  "dataset": {
+    "n_raw": 130,
+    "n": 114,
+    "text_duplicates_removed": 16,
+    "groups": 111,
+    "sources": {
+      "autorouter": 108,
+      "fixture": 3,
+      "aai_matched": 3
+    },
+    "categories": {
+      "PROCEDURE": 45,
+      "OBSTACLE": 15,
+      "AERODROME": 32,
+      "RUNWAY": 14,
+      "NAVAID_COMMS": 5,
+      "NAV_WARNING": 3
+    },
+    "severities": {
+      "ADVISORY": 97,
+      "RESTRICTIVE": 14,
+      "BLOCKING": 3
+    }
+  },
+  "protocol": "weak: StratifiedGroupKFold(3) x 5 repeats, metrics from repeat 0 + per-repeat spread; human: see classification/experiment.py",
+  "rules_with_qcode": {
+    "n": 114,
+    "agreement": 1.0,
+    "note": "circular: weak labels are produced by these rules"
+  },
+  "cross_validation": {
+    "rules_only_q_hidden": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 45
+          },
+          "OTHER": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE",
+          "OTHER"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            32
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.1228,
+        "macro_f1": 0.0729,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.1228,
+            "recall": 1.0,
+            "f1": 0.2188,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            97,
+            0
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0263,
+      "repeat_macro_f1_category_mean": 0.0,
+      "repeat_macro_f1_category_std": 0.0,
+      "repeat_macro_f1_severity_mean": 0.0729,
+      "repeat_macro_f1_severity_std": 0.0
+    },
+    "ml_argmax": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.9123,
+        "macro_f1": 0.9058,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.8485,
+            "recall": 0.875,
+            "f1": 0.8615,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.7692,
+            "recall": 0.7143,
+            "f1": 0.7407,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 1.0,
+            "recall": 0.9333,
+            "f1": 0.9655,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.9574,
+            "recall": 1.0,
+            "f1": 0.9783,
+            "support": 45
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            28,
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.9298,
+        "macro_f1": 0.891,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.7143,
+            "recall": 0.7143,
+            "f1": 0.7143,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.9588,
+            "recall": 0.9588,
+            "f1": 0.9588,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            4
+          ],
+          [
+            0,
+            4,
+            93
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0351,
+      "repeat_macro_f1_category_mean": 0.8915,
+      "repeat_macro_f1_category_std": 0.0123,
+      "repeat_macro_f1_severity_mean": 0.9251,
+      "repeat_macro_f1_severity_std": 0.0238
+    },
+    "merged_q_hidden": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.9123,
+        "macro_f1": 0.9058,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.8485,
+            "recall": 0.875,
+            "f1": 0.8615,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.7692,
+            "recall": 0.7143,
+            "f1": 0.7407,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 1.0,
+            "recall": 0.9333,
+            "f1": 0.9655,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.9574,
+            "recall": 1.0,
+            "f1": 0.9783,
+            "support": 45
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            28,
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.9298,
+        "macro_f1": 0.891,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.7143,
+            "recall": 0.7143,
+            "f1": 0.7143,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.9588,
+            "recall": 0.9588,
+            "f1": 0.9588,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            4
+          ],
+          [
+            0,
+            4,
+            93
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0351,
+      "repeat_macro_f1_category_mean": 0.8915,
+      "repeat_macro_f1_category_std": 0.0123,
+      "repeat_macro_f1_severity_mean": 0.9202,
+      "repeat_macro_f1_severity_std": 0.0192
+    }
+  },
+  "cross_validation_template_grouped": {
+    "rules_only_q_hidden": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 45
+          },
+          "OTHER": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE",
+          "OTHER"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            32
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.1228,
+        "macro_f1": 0.0729,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.1228,
+            "recall": 1.0,
+            "f1": 0.2188,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            97,
+            0
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0263,
+      "repeat_macro_f1_category_mean": 0.0,
+      "repeat_macro_f1_category_std": 0.0,
+      "repeat_macro_f1_severity_mean": 0.0729,
+      "repeat_macro_f1_severity_std": 0.0
+    },
+    "ml_argmax": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.9123,
+        "macro_f1": 0.9058,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.8485,
+            "recall": 0.875,
+            "f1": 0.8615,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.7692,
+            "recall": 0.7143,
+            "f1": 0.7407,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 1.0,
+            "recall": 0.9333,
+            "f1": 0.9655,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.9574,
+            "recall": 1.0,
+            "f1": 0.9783,
+            "support": 45
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            28,
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.9561,
+        "macro_f1": 0.9297,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.8462,
+            "recall": 0.7857,
+            "f1": 0.8148,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.9694,
+            "recall": 0.9794,
+            "f1": 0.9744,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            11,
+            3
+          ],
+          [
+            0,
+            2,
+            95
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0263,
+      "repeat_macro_f1_category_mean": 0.9013,
+      "repeat_macro_f1_category_std": 0.0086,
+      "repeat_macro_f1_severity_mean": 0.9297,
+      "repeat_macro_f1_severity_std": 0.0
+    },
+    "merged_q_hidden": {
+      "category": {
+        "n": 114,
+        "accuracy": 0.9123,
+        "macro_f1": 0.9058,
+        "per_class": {
+          "NAV_WARNING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "AERODROME": {
+            "precision": 0.8485,
+            "recall": 0.875,
+            "f1": 0.8615,
+            "support": 32
+          },
+          "RUNWAY": {
+            "precision": 0.7692,
+            "recall": 0.7143,
+            "f1": 0.7407,
+            "support": 14
+          },
+          "NAVAID_COMMS": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889,
+            "support": 5
+          },
+          "OBSTACLE": {
+            "precision": 1.0,
+            "recall": 0.9333,
+            "f1": 0.9655,
+            "support": 15
+          },
+          "PROCEDURE": {
+            "precision": 0.9574,
+            "recall": 1.0,
+            "f1": 0.9783,
+            "support": 45
+          }
+        },
+        "labels": [
+          "NAV_WARNING",
+          "AERODROME",
+          "RUNWAY",
+          "NAVAID_COMMS",
+          "OBSTACLE",
+          "PROCEDURE"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            28,
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            45
+          ]
+        ]
+      },
+      "severity": {
+        "n": 114,
+        "accuracy": 0.9386,
+        "macro_f1": 0.9075,
+        "per_class": {
+          "BLOCKING": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "RESTRICTIVE": {
+            "precision": 0.7333,
+            "recall": 0.7857,
+            "f1": 0.7586,
+            "support": 14
+          },
+          "ADVISORY": {
+            "precision": 0.9688,
+            "recall": 0.9588,
+            "f1": 0.9637,
+            "support": 97
+          }
+        },
+        "labels": [
+          "BLOCKING",
+          "RESTRICTIVE",
+          "ADVISORY"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            11,
+            3
+          ],
+          [
+            0,
+            4,
+            93
+          ]
+        ]
+      },
+      "severity_under_classification_rate": 0.0263,
+      "repeat_macro_f1_category_mean": 0.9013,
+      "repeat_macro_f1_category_std": 0.0086,
+      "repeat_macro_f1_severity_mean": 0.9225,
+      "repeat_macro_f1_severity_std": 0.015
+    }
+  },
+  "human_labels": {
+    "leakage_audit": {
+      "annotated_notams": 300,
+      "weak_examples": 114,
+      "shared_notam_identities": 1,
+      "shared_identity_list": [
+        "VOMM|A2644/26"
+      ],
+      "shared_text_templates": 11,
+      "shared_exact_texts": 5,
+      "note": "Before this protocol, the human-label evaluation trained on ALL weak examples and scored ALL annotated rows, so these overlaps were in both training and test."
+    },
+    "split": {
+      "created_at": "2026-11-21T18:28:57+00:00",
+      "seed": 13,
+      "test_frac": 0.3,
+      "grouping": "near-duplicate clusters (char 3-5-gram TF-IDF cosine >= 0.8 or same first-6-token template)",
+      "n_clusters": 227,
+      "stratified_on": "severity (category when severity missing)",
+      "sheet_fingerprint": "2f22fe1ea8f998741fc6bd1ea58b1cfe38b7c7810dfebaf40ccc23cb8c71d78e",
+      "rare_class_notes": [],
+      "reused": false
+    },
+    "near_duplicate_clusters": {
+      "human_notams": 300,
+      "clusters_among_human": 227
+    },
+    "holdout_notams": 101,
+    "dev_notams": 199,
+    "holdout_distribution": {
+      "category": {
+        "RUNWAY": 20,
+        "NAVAID_COMMS": 4,
+        "OBSTACLE": 15,
+        "NAV_WARNING": 23,
+        "AERODROME": 30,
+        "PROCEDURE": 9
+      },
+      "severity": {
+        "RESTRICTIVE": 59,
+        "BLOCKING": 6,
+        "ADVISORY": 36
+      }
+    },
+    "dev_distribution": {
+      "category": {
+        "AERODROME": 91,
+        "OBSTACLE": 8,
+        "NAV_WARNING": 50,
+        "NAVAID_COMMS": 18,
+        "RUNWAY": 21,
+        "PROCEDURE": 11
+      },
+      "severity": {
+        "RESTRICTIVE": 117,
+        "ADVISORY": 71,
+        "BLOCKING": 11
+      }
+    },
+    "weak_distribution": {
+      "category": {
+        "PROCEDURE": 45,
+        "OBSTACLE": 15,
+        "AERODROME": 32,
+        "RUNWAY": 14,
+        "NAVAID_COMMS": 5,
+        "NAV_WARNING": 3
+      },
+      "severity": {
+        "ADVISORY": 97,
+        "RESTRICTIVE": 14,
+        "BLOCKING": 3
+      }
+    },
+    "holdout": {
+      "baseline": {
+        "training": {
+          "n_train": 103,
+          "by_label_type": {
+            "weak_qcode": 103
+          },
+          "excluded_for_leakage": 11,
+          "text_duplicates_removed": 0
+        },
+        "ml": {
+          "category": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.6139,
+            "macro_f1": 0.5605,
+            "macro_precision": 0.6439,
+            "macro_recall": 0.5731,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 23
+              },
+              "AERODROME": {
+                "precision": 0.4386,
+                "recall": 0.8333,
+                "f1": 0.5747,
+                "support": 30
+              },
+              "RUNWAY": {
+                "precision": 0.8,
+                "recall": 0.8,
+                "f1": 0.8,
+                "support": 20
+              },
+              "NAVAID_COMMS": {
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "support": 4
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 15
+              },
+              "PROCEDURE": {
+                "precision": 0.625,
+                "recall": 0.5556,
+                "f1": 0.5882,
+                "support": 9
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0,
+                25,
+                4,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                4,
+                16,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                15,
+                0
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0,
+                5
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.4554,
+            "macro_f1": 0.2856,
+            "macro_precision": 0.4652,
+            "macro_recall": 0.3898,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 6
+              },
+              "RESTRICTIVE": {
+                "precision": 1.0,
+                "recall": 0.1695,
+                "f1": 0.2899,
+                "support": 59
+              },
+              "ADVISORY": {
+                "precision": 0.3956,
+                "recall": 1.0,
+                "f1": 0.5669,
+                "support": 36
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                6
+              ],
+              [
+                0,
+                10,
+                49
+              ],
+              [
+                0,
+                0,
+                36
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.5446
+          }
+        },
+        "merged": {
+          "category": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.7723,
+            "macro_f1": 0.7633,
+            "macro_precision": 0.8648,
+            "macro_recall": 0.7201,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.8667,
+                "recall": 0.5652,
+                "f1": 0.6842,
+                "support": 23
+              },
+              "AERODROME": {
+                "precision": 0.6,
+                "recall": 0.9,
+                "f1": 0.72,
+                "support": 30
+              },
+              "RUNWAY": {
+                "precision": 0.8889,
+                "recall": 0.8,
+                "f1": 0.8421,
+                "support": 20
+              },
+              "NAVAID_COMMS": {
+                "precision": 1.0,
+                "recall": 0.5,
+                "f1": 0.6667,
+                "support": 4
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 15
+              },
+              "PROCEDURE": {
+                "precision": 0.8333,
+                "recall": 0.5556,
+                "f1": 0.6667,
+                "support": 9
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                13,
+                10,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                27,
+                2,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                4,
+                16,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                15,
+                0
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0,
+                5
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.6139,
+            "macro_f1": 0.5484,
+            "macro_precision": 0.6404,
+            "macro_recall": 0.5728,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.5,
+                "recall": 0.3333,
+                "f1": 0.4,
+                "support": 6
+              },
+              "RESTRICTIVE": {
+                "precision": 0.9286,
+                "recall": 0.4407,
+                "f1": 0.5977,
+                "support": 59
+              },
+              "ADVISORY": {
+                "precision": 0.4928,
+                "recall": 0.9444,
+                "f1": 0.6476,
+                "support": 36
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                0,
+                4
+              ],
+              [
+                2,
+                26,
+                31
+              ],
+              [
+                0,
+                2,
+                34
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.3465
+          }
+        }
+      },
+      "improved": {
+        "training": {
+          "n_train": 288,
+          "by_label_type": {
+            "human_preliminary": 186,
+            "weak_qcode": 102
+          },
+          "excluded_for_leakage": 11,
+          "text_duplicates_removed": 13
+        },
+        "ml": {
+          "category": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.8218,
+            "macro_f1": 0.7756,
+            "macro_precision": 0.8405,
+            "macro_recall": 0.7557,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.7333,
+                "recall": 0.9565,
+                "f1": 0.8302,
+                "support": 23
+              },
+              "AERODROME": {
+                "precision": 0.7857,
+                "recall": 0.7333,
+                "f1": 0.7586,
+                "support": 30
+              },
+              "RUNWAY": {
+                "precision": 0.8571,
+                "recall": 0.9,
+                "f1": 0.878,
+                "support": 20
+              },
+              "NAVAID_COMMS": {
+                "precision": 0.6667,
+                "recall": 0.5,
+                "f1": 0.5714,
+                "support": 4
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 15
+              },
+              "PROCEDURE": {
+                "precision": 1.0,
+                "recall": 0.4444,
+                "f1": 0.6154,
+                "support": 9
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                22,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                22,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                15,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                1,
+                0,
+                4
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.8119,
+            "macro_f1": 0.6804,
+            "macro_precision": 0.7078,
+            "macro_recall": 0.6642,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.5,
+                "recall": 0.3333,
+                "f1": 0.4,
+                "support": 6
+              },
+              "RESTRICTIVE": {
+                "precision": 0.8667,
+                "recall": 0.8814,
+                "f1": 0.8739,
+                "support": 59
+              },
+              "ADVISORY": {
+                "precision": 0.7568,
+                "recall": 0.7778,
+                "f1": 0.7671,
+                "support": 36
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                0,
+                4
+              ],
+              [
+                2,
+                52,
+                5
+              ],
+              [
+                0,
+                8,
+                28
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.0891
+          }
+        },
+        "merged": {
+          "category": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.8119,
+            "macro_f1": 0.7331,
+            "macro_precision": 0.8099,
+            "macro_recall": 0.714,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.6875,
+                "recall": 0.9565,
+                "f1": 0.8,
+                "support": 23
+              },
+              "AERODROME": {
+                "precision": 0.8148,
+                "recall": 0.7333,
+                "f1": 0.7719,
+                "support": 30
+              },
+              "RUNWAY": {
+                "precision": 0.8571,
+                "recall": 0.9,
+                "f1": 0.878,
+                "support": 20
+              },
+              "NAVAID_COMMS": {
+                "precision": 0.5,
+                "recall": 0.25,
+                "f1": 0.3333,
+                "support": 4
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "support": 15
+              },
+              "PROCEDURE": {
+                "precision": 1.0,
+                "recall": 0.4444,
+                "f1": 0.6154,
+                "support": 9
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                22,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                22,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                15,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                1,
+                0,
+                4
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 101,
+            "n_unique_notams": 101,
+            "accuracy": 0.8119,
+            "macro_f1": 0.739,
+            "macro_precision": 0.7364,
+            "macro_recall": 0.7567,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.5,
+                "recall": 0.6667,
+                "f1": 0.5714,
+                "support": 6
+              },
+              "RESTRICTIVE": {
+                "precision": 0.8125,
+                "recall": 0.8814,
+                "f1": 0.8455,
+                "support": 59
+              },
+              "ADVISORY": {
+                "precision": 0.8966,
+                "recall": 0.7222,
+                "f1": 0.8,
+                "support": 36
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                4,
+                2,
+                0
+              ],
+              [
+                4,
+                52,
+                3
+              ],
+              [
+                0,
+                10,
+                26
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.0495
+          }
+        }
+      }
+    },
+    "holdout_novelty": {
+      "max_similarity_to_training": {
+        "min": 0.131,
+        "median": 0.459,
+        "max": 0.778
+      },
+      "n_with_similarity_ge_0.8": 0,
+      "n_novel_lt_0.6": 61,
+      "novel_subset": {
+        "baseline": {
+          "category": {
+            "n_predictions": 61,
+            "n_unique_notams": 61,
+            "accuracy": 0.7541,
+            "macro_f1": 0.7527,
+            "macro_precision": 0.8324,
+            "macro_recall": 0.7066,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.9286,
+                "recall": 0.7647,
+                "f1": 0.8387,
+                "support": 17
+              },
+              "AERODROME": {
+                "precision": 0.6333,
+                "recall": 0.8636,
+                "f1": 0.7308,
+                "support": 22
+              },
+              "RUNWAY": {
+                "precision": 0.8,
+                "recall": 0.6667,
+                "f1": 0.7273,
+                "support": 12
+              },
+              "NAVAID_COMMS": {
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8,
+                "support": 3
+              },
+              "PROCEDURE": {
+                "precision": 0.8,
+                "recall": 0.5714,
+                "f1": 0.6667,
+                "support": 7
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                13,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                2,
+                0,
+                1
+              ],
+              [
+                0,
+                4,
+                8,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0,
+                4
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OBSTACLE",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 61,
+            "n_unique_notams": 61,
+            "accuracy": 0.5902,
+            "macro_f1": 0.5643,
+            "macro_precision": 0.6268,
+            "macro_recall": 0.6268,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.5,
+                "recall": 0.5,
+                "f1": 0.5,
+                "support": 4
+              },
+              "RESTRICTIVE": {
+                "precision": 0.9444,
+                "recall": 0.4359,
+                "f1": 0.5965,
+                "support": 39
+              },
+              "ADVISORY": {
+                "precision": 0.4359,
+                "recall": 0.9444,
+                "f1": 0.5965,
+                "support": 18
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                0,
+                2
+              ],
+              [
+                2,
+                17,
+                20
+              ],
+              [
+                0,
+                1,
+                17
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.3607
+          }
+        },
+        "improved": {
+          "category": {
+            "n_predictions": 61,
+            "n_unique_notams": 61,
+            "accuracy": 0.7213,
+            "macro_f1": 0.6278,
+            "macro_precision": 0.7372,
+            "macro_recall": 0.6151,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.6667,
+                "recall": 0.9412,
+                "f1": 0.7805,
+                "support": 17
+              },
+              "AERODROME": {
+                "precision": 0.75,
+                "recall": 0.6818,
+                "f1": 0.7143,
+                "support": 22
+              },
+              "RUNWAY": {
+                "precision": 0.7692,
+                "recall": 0.8333,
+                "f1": 0.8,
+                "support": 12
+              },
+              "NAVAID_COMMS": {
+                "precision": 0.5,
+                "recall": 0.3333,
+                "f1": 0.4,
+                "support": 3
+              },
+              "PROCEDURE": {
+                "precision": 1.0,
+                "recall": 0.2857,
+                "f1": 0.4444,
+                "support": 7
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                16,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                15,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                10,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                1,
+                2
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OBSTACLE",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 61,
+            "n_unique_notams": 61,
+            "accuracy": 0.7705,
+            "macro_f1": 0.6667,
+            "macro_precision": 0.7037,
+            "macro_recall": 0.651,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.5,
+                "recall": 0.5,
+                "f1": 0.5,
+                "support": 4
+              },
+              "RESTRICTIVE": {
+                "precision": 0.7778,
+                "recall": 0.8974,
+                "f1": 0.8333,
+                "support": 39
+              },
+              "ADVISORY": {
+                "precision": 0.8333,
+                "recall": 0.5556,
+                "f1": 0.6667,
+                "support": 18
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                2,
+                0
+              ],
+              [
+                2,
+                35,
+                2
+              ],
+              [
+                0,
+                8,
+                10
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.0656
+          }
+        }
+      }
+    },
+    "holdout_bootstrap": {
+      "category": {
+        "n": 101,
+        "mean_diff_improved_minus_baseline": -0.028,
+        "ci95": [
+          -0.1678,
+          0.0997
+        ]
+      },
+      "severity": {
+        "n": 101,
+        "mean_diff_improved_minus_baseline": 0.1891,
+        "ci95": [
+          0.0504,
+          0.3495
+        ]
+      }
+    },
+    "dev_cv": {
+      "n_dev_notams": 199,
+      "folds": 5,
+      "repeats": 5,
+      "summary": {
+        "baseline": {
+          "category_macro_f1_mean": 0.5095,
+          "severity_macro_f1_mean": 0.3639,
+          "category_macro_f1_sd": 0.0302,
+          "severity_macro_f1_sd": 0.002,
+          "per_repeat": {
+            "category": [
+              0.4553,
+              0.5035,
+              0.5391,
+              0.5357,
+              0.5139
+            ],
+            "severity": [
+              0.3622,
+              0.3663,
+              0.3622,
+              0.3663,
+              0.3622
+            ]
+          }
+        },
+        "improved": {
+          "category_macro_f1_mean": 0.5666,
+          "severity_macro_f1_mean": 0.5865,
+          "category_macro_f1_sd": 0.0124,
+          "severity_macro_f1_sd": 0.0095,
+          "per_repeat": {
+            "category": [
+              0.5598,
+              0.5663,
+              0.5572,
+              0.5906,
+              0.5589
+            ],
+            "severity": [
+              0.5874,
+              0.5871,
+              0.6032,
+              0.5785,
+              0.5762
+            ]
+          }
+        }
+      },
+      "paired_difference": {
+        "category": {
+          "mean_diff": 0.0571,
+          "sd": 0.0281,
+          "repeats_improved_better": 5,
+          "repeats": 5
+        },
+        "severity": {
+          "mean_diff": 0.2226,
+          "sd": 0.0103,
+          "repeats_improved_better": 5,
+          "repeats": 5
+        }
+      },
+      "repeat0_merged_metrics": {
+        "baseline": {
+          "category": {
+            "n_predictions": 199,
+            "n_unique_notams": 199,
+            "accuracy": 0.6131,
+            "macro_f1": 0.4553,
+            "macro_precision": 0.6314,
+            "macro_recall": 0.4337,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.96,
+                "recall": 0.48,
+                "f1": 0.64,
+                "support": 50
+              },
+              "AERODROME": {
+                "precision": 0.587,
+                "recall": 0.8901,
+                "f1": 0.7074,
+                "support": 91
+              },
+              "RUNWAY": {
+                "precision": 0.5333,
+                "recall": 0.381,
+                "f1": 0.4444,
+                "support": 21
+              },
+              "NAVAID_COMMS": {
+                "precision": 0.3333,
+                "recall": 0.0556,
+                "f1": 0.0952,
+                "support": 18
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "support": 8
+              },
+              "PROCEDURE": {
+                "precision": 0.375,
+                "recall": 0.5455,
+                "f1": 0.4444,
+                "support": 11
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                24,
+                26,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                81,
+                5,
+                2,
+                0,
+                3
+              ],
+              [
+                0,
+                11,
+                8,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                10,
+                1,
+                1,
+                0,
+                5
+              ],
+              [
+                0,
+                5,
+                1,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                5,
+                0,
+                0,
+                0,
+                6
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 199,
+            "n_unique_notams": 199,
+            "accuracy": 0.5377,
+            "macro_f1": 0.3622,
+            "macro_precision": 0.4622,
+            "macro_recall": 0.4322,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 11
+              },
+              "RESTRICTIVE": {
+                "precision": 0.95,
+                "recall": 0.3248,
+                "f1": 0.4841,
+                "support": 117
+              },
+              "ADVISORY": {
+                "precision": 0.4367,
+                "recall": 0.9718,
+                "f1": 0.6026,
+                "support": 71
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                11
+              ],
+              [
+                1,
+                38,
+                78
+              ],
+              [
+                0,
+                2,
+                69
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.4472
+          }
+        },
+        "improved": {
+          "category": {
+            "n_predictions": 199,
+            "n_unique_notams": 199,
+            "accuracy": 0.6482,
+            "macro_f1": 0.5598,
+            "macro_precision": 0.6108,
+            "macro_recall": 0.5431,
+            "per_class": {
+              "NAV_WARNING": {
+                "precision": 0.6769,
+                "recall": 0.88,
+                "f1": 0.7652,
+                "support": 50
+              },
+              "AERODROME": {
+                "precision": 0.75,
+                "recall": 0.6593,
+                "f1": 0.7018,
+                "support": 91
+              },
+              "RUNWAY": {
+                "precision": 0.3793,
+                "recall": 0.5238,
+                "f1": 0.44,
+                "support": 21
+              },
+              "NAVAID_COMMS": {
+                "precision": 0.6364,
+                "recall": 0.3889,
+                "f1": 0.4828,
+                "support": 18
+              },
+              "OBSTACLE": {
+                "precision": 1.0,
+                "recall": 0.625,
+                "f1": 0.7692,
+                "support": 8
+              },
+              "PROCEDURE": {
+                "precision": 0.2222,
+                "recall": 0.1818,
+                "f1": 0.2,
+                "support": 11
+              }
+            },
+            "labels": [
+              "NAV_WARNING",
+              "AERODROME",
+              "RUNWAY",
+              "NAVAID_COMMS",
+              "OBSTACLE",
+              "PROCEDURE"
+            ],
+            "confusion_matrix": [
+              [
+                44,
+                6,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                18,
+                60,
+                11,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                8,
+                11,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                2,
+                4,
+                7,
+                0,
+                4
+              ],
+              [
+                0,
+                1,
+                2,
+                0,
+                5,
+                0
+              ],
+              [
+                2,
+                3,
+                1,
+                3,
+                0,
+                2
+              ]
+            ],
+            "classes_absent_from_reference": [
+              "AIRSPACE_RESTRICTION",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "n_predictions": 199,
+            "n_unique_notams": 199,
+            "accuracy": 0.7437,
+            "macro_f1": 0.5874,
+            "macro_precision": 0.7207,
+            "macro_recall": 0.5559,
+            "per_class": {
+              "BLOCKING": {
+                "precision": 0.6667,
+                "recall": 0.1818,
+                "f1": 0.2857,
+                "support": 11
+              },
+              "RESTRICTIVE": {
+                "precision": 0.741,
+                "recall": 0.8803,
+                "f1": 0.8047,
+                "support": 117
+              },
+              "ADVISORY": {
+                "precision": 0.7544,
+                "recall": 0.6056,
+                "f1": 0.6719,
+                "support": 71
+              }
+            },
+            "labels": [
+              "BLOCKING",
+              "RESTRICTIVE",
+              "ADVISORY"
+            ],
+            "confusion_matrix": [
+              [
+                2,
+                8,
+                1
+              ],
+              [
+                1,
+                103,
+                13
+              ],
+              [
+                0,
+                28,
+                43
+              ]
+            ],
+            "classes_absent_from_reference": [],
+            "under_classification_rate": 0.1106
+          }
+        }
+      },
+      "severity_threshold_sensitivity_ml_only": {
+        "baseline": {
+          "0.4": 0.2466,
+          "0.5": 0.2487,
+          "0.55": 0.2651,
+          "0.6": 0.259,
+          "0.7": 0.2834
+        },
+        "improved": {
+          "0.4": 0.7468,
+          "0.5": 0.5881,
+          "0.55": 0.59,
+          "0.6": 0.5835,
+          "0.7": 0.5545
+        }
+      },
+      "note": "per-repeat metrics; each repeat predicts each development NOTAM exactly once"
+    },
+    "verdict": "category: hold-out macro-F1 0.7633 -> 0.7331; dev-CV paired diff +0.0571 (better in 5/5 repeats); bootstrap 95% CI [-0.1678, 0.0997] => improvement NOT established | severity: hold-out macro-F1 0.5484 -> 0.739; dev-CV paired diff +0.2226 (better in 5/5 repeats); bootstrap 95% CI [0.0504, 0.3495] => improvement supported"
+  }
+}
